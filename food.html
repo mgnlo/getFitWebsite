@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Get fit get lit</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+	================================================== -->
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+   	<style type="text/css">
+	body{
+		background-color:#D5CBA8;
+		}
+	#imageBox {
+	margin-right: auto;
+	margin-left: auto;
+	max-height: 3509px;
+	}		
+	#imageBox .imgBox {
+	width: 33%;
+	text-align: center;
+	border: medium solid #937E64;
+	background-color: #D5CBA8;
+	}
+    #imageBox .imgBox img {
+	width: 100%;
+	margin: 2px;
+	padding: 5px;
+	height: auto;
+	}
+    h3 {
+	font-family: amatic-sc;
+	width: 100%;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 200%;
+}
+    p {
+	font-family: averia-serif-libre;
+	width: 100%;
+	font-style: normal;
+	font-weight: 300;
+	font-variant: small-caps;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+	@media screen and (min-width:992px){#imageBox .imgBox{width:25%;}}
+	@media screen and (min-width:768px) and (max-width:991px){#imageBox .imgBox{width:33%;}}
+	@media screen and (min-width:480px) and (max-width:767px){#imageBox .imgBox{width:50%;}}
+	@media screen and (max-width:479px){#imageBox .imgBox{width:100%;}}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+  <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+    <script>var __adobewebfontsappname__="dreamweaver"</script>
+  	<script src="http://use.edgefonts.net/amatic-sc:n4,n7:default;averia-serif-libre:n3,n4:default.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/food style.css">
+	
+	<!-- Custom Fonts -->
+    <link href="font/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/food0menu.css">
+	<script src="js/jquery1111.min.js" type="text/javascript"></script>
+	<script src="js/script.js"></script>
+	
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/Items/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+<script>
+	$(document).ready(function() {
+    	$("#contact").click(function(){
+			$("html,body").animate({scrollTop:$("#contact_form").offset().top} , 800); }); 
+    });
+</script>
+</head>
+
+<body>
+
+<!--////////////////////////////////////Header-->
+
+<!-----------------menu-------------------->
+	<header>
+		<div id="cssmenu" class="align-center">
+			<ul>
+			   <li class="active"><a href="index.html"><span>Home</span></a></li>
+			   
+               <li class="has-sub"><a href="#"><span>Menu</span></a>
+				  <ul >
+					 <li class="has-sub"><a href="#"><span>Calculator</span></a>
+						<ul>
+						   <li><a href="bmr.html"><span>BMR Calculator</span></a></li>
+						   <li class="last"><a href="bmi.html"><span>Body Fat Rate</span></a></li>
+						</ul>
+					 </li>
+					 <li class="has-sub"><a href="#"><span>Get Fit By</span></a>
+						<ul>
+						   <li><a href="food.html"><span>Food</span></a></li>
+						   <li class="last"><a href="train.html"><span>Train</span></a></li>
+						</ul>
+					 </li>
+				  </ul>
+			   </li>
+               
+               <li class="has-sub"><a href="#"><span>Account</span></a>
+               <ul>
+               <li><a href="account setting.html"><span>Account Setting</span></a></li>
+               <li class="last"><a href="#"><span>My Favorite</span></a></li>
+               </ul>
+               </li>
+			   
+			   <li><a href="News.html"><span>Hot News</span></a>
+               </li>
+			   <li class="last" id="contact"><a href="index.html#contact_form"><span>Contact</span></a></li>
+			</ul>
+      </div>    
+	</header>
+<!--////////////////////////////////////Container-->
+
+		<!-----------------content-box-1-------------------->
+	<div class="container">
+    <div class="logo" id="title">Diet Meal</div>
+    <div id="imageBox" class="row">
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>Fruit cereal yogurt</h3>
+      <img src="images/_1_42170.jpg" width="680"  height="453" alt=""/>
+      <p>Ingredients<br> fruit, cereal(sugar free), chia seeds, yorgurt, milk<br><br>1. fermented yorgurt mix milk with room temperature until the solidification<br>2. mix into fruits , cereals, and Chia seeds</p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>Scremble eggs</h3>
+      <img src="images/breakfast3.jpg" width="625" height="625" alt=""/>
+	  <p>Ingredients<br>2 eggs, 2 spoons of milk and cheese powder, few pepper and salt<br><br>1. mix the eggs and milk in the cup<br>2. microwave for 45s and stir, and microwave 30~45s until sremble eggs are formed<br>3. sprinkle on the cheese salt snd pepper</p>
+     </div>
+     <div class="imgBox  col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>Tuna salad with twang</h3>
+      <img src="images/tuna.jpg" width="711" height="306" alt=""/>
+	  <p>Ingredients<br>10 oz. canned tuna<br>2 T mayonnaise<br>½ C red bell pepper, finely diced<br>½ C celery, finely diced<br>1 T fresh chives, finely chopped (or ½ T onion)<br>1½ T sweet pickle relish<br>1 T Dijon mustard<br>1 t. RFS Cherry Pepper Blend<br>½ t. curry powder<br>May substitute any RFS blend to moderate flavor or intensify spiciness.<br><br>1. Combine above ingredients in medium bowl and mix together.<br>2. Serve tuna salad on a cold plate with mixed greens or create a tuna melt sandwich.</p>
+     </div>
+     <div class="imgBox  col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>Blueberry yourgurt</h3>
+      <img src="images/8282af8e836209b0909004e83dde72fb.jpg" width="493"  height="335" alt=""/>
+      <p>Ingredients<br>10 blueberries<br>1 tbsp. plain yogurt (Greek yogurt is the best)<br><br>1. Mash the blueberries with a spoon (or fork)<br>2. Stir in the yogurt; mix well<br>3. Apply to a clean face (avoid the eye area)<br>4. Let sit for 15-20 minutes<br>5. Rinse with lukewarm water</p>
+     </div>
+     <div class="imgBox  col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>Broiled Salmon with Broccoli and Cheese</h3>
+      <img src="images/074a907e04074a3e226c9ea236150267.jpg" width="564"  height="845" alt=""/>
+      <p>Ingredients<br>1 lb broccoli<br>3½ oz. butter salt and pepper to taste<br>5 oz. grated cheddar cheese<br>1½ lbs salmon<br>1 lime (optional)<br><br>1. Preheat the oven to 400°F (200°C), preferably using the broiler setting.<br>2. Cut the broccoli into smaller florets and let simmer in lightly salted water for a couple of minutes. Make sure the broccoli maintains its chewy texture and delicate color.<br>3. Place the drained broccoli in a well-greased baking dish. Add butter and pepper to taste.<br>4. Sprinkle cheese on top of the broccoli and bake in the oven for 15-20 minutes until the cheese turns a golden color.<br>5. Broil the salmon in plenty of butter, a few minutes on each side. The lime can be fried in the same pan or be served raw.</p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>Cauliflower Cups with Herb Pesto and Lamb</h3>
+      <img src="images/Paleo-Cauliflower-Cups-With-Herb-Pesto-and-Lamb.jpg" width="1240"  height="775" alt=""/>
+      <p>Ingredients<br>2 Tbsp refined coconut oil, melted<br>4 cups coarsely chopped fresh cauliflower<br>2 large eggs<br>½ cup almond meal<br>¼ tsp black pepper<br>1 tsp Mediterranean Seasoning (see recipe below)<br>¾ cup firmly packed fresh cilantro<br>½ cup firmly packed fresh parsley<br>¼ cup firmly packed fresh mint<br>⅓ cup pine nuts, toasted<br>¼ cup olive oil<br><br>1. Bake cauliflower cups for 10~15 mins or until cauliflower cups are lightly browned and centers are set. Place on wire rack but do not remove from the pan.<br>2. Cook and stir for 1 minute. Spoon lamb mixture evenly into cauliflower cups.<br>3. In a dry small skillet toast fennel seeds over medium-low heat for 1 to 2 minutes or until fragrant, shaking skillet occasionally. Remove from the heat; cool about 2 minutes. Transfer seeds to a spice grinder; grind to a powder.</p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>The Sriracha Cookbook</h3>
+      <img src="images/Minestrone Genovese.jpg" width="970"  height="546" alt=""/>
+      <p>Ingredients<br>4 cups vegetable stock<br>½ cup sriracha<br>6 roma tomatoes, diced<br>3 carrots, chopped<br>3 celery stalks, chopped<br>1 red onion<br>1 large zucchini, halved lengthwise and chopped<br><br>1. In a large Dutch oven or soup pot over medium-high heat, combine the stock, sriracha, tomatoes, carrots, celery, onion, zucchini, garlic, bay leaves, and oregano.<br>2. Bring to a boil, then immediately lower the heat. Cover and simmer for 15 minutes.<br>3.  Discard the bay leaves. Stir in the beans and kale. Cook until both are tender, 5 to 7 minutes.<br>4. Stir in the lemon juice, then season with salt and pepper to taste. Serve immediately.</p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>grilled fish</h3>
+      <img src="images/Diet-Meal-Delivery.jpg" width="1140"  height="445" alt=""/>
+      <p>Ingredients<br>1 garlic<br>6 spoond oil<br>1 teaspoon dried basil<br>2 (6 ounce) fillets halibut<br><br>1. In a stainless steel or glass bowl, combine garlic, olive oil, basil, salt, pepper, lemon juice, and parsley. <br>2. Place the halibut filets in a shallow glass dish or a resealable plastic bag, and pour the marinade over the fish. Cover or seal and place in the refrigerator for 1 hour, turning occasionally.<br>3. Preheat an outdoor grill for high heat and lightly oil grate. Set grate 4 inches from the heat.<br>4. Remove halibut filets from marinade and drain off the excess. Grill filets 5 minutes per side or until fish is done when easily flaked with a fork.</p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>Ashley Graham’s Beet Smoothie</h3>
+      <img src="images/spinach-beet-smoothie-720.jpg" width="970"  height="546" alt=""/>
+      <p>Ingredients<br>1 medium beet<br>chopped into pieces<br>2 stalks of kale<br>the juice of 1 lemon<br>1-inch piece of ginger<br><br>1. Blend ingredients in a blender until smooth.<br>2. Add an extra ½ cup of water if needed for desired consistency and enjoy!</p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+     <h3>Vegetable soup</h3>
+     <img src="images/mexican-vegetable-soup.jpg" width="1200"  height="1600" alt=""/>
+     <p>Ingredients<br>1 medium head cabbage chopped<br>1 onion chopped<br>3 large carrots chopped<br>3 stalks celery chopped<br>3 tomatoes chopped<br>16 ounces frozen green beans<br>2 (1 ounce) packages dry onion soup mix 6 cups water<br><br>1. Combine water, soup mix, and vegetables in a large stock pot. Bring to a boil. Reduce heat, and simmer until the vegetables are tender.</p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+     <h3>Brown Sugar and Honey Limeade</h3>
+     <img src="images/small-garden-cilantro-limeade-mbd107959_vert.jpg" width="1040"  height="1300" alt=""/>
+     <p>Ingredients<br>1¾ cups freshly squeezed lime juice and pulp<br>10 cups cool water<br>½ cup honey, warmed<br>½ cup brown sugar<br>2 limes, sliced<br>½ cup honey, warmed<br><br>1.Combine the lime juice and water in a pitcher<br>mix in the warm honey. Stir the brown sugar into the mixture until dissolved completely. Pour over ice and top with a lime slice to serve.</p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+     <h3>Blueberry Limeade</h3>
+     <img src="images/3391012.jpg" width="250"  height="250" alt=""/>
+     <p>Ingredients<br>2 cups fresh blueberries<br>6 cups water, or more as needed<br>½ white sugar, or to taste<br>½ cup brown sugar<br>⅓ cup freshly squeezed lime juice<br><br>1.lend blueberries, sugar, lime juice, and 1 cup water together in a blender<br>2. pour into a pitcher<br>3. Add remaining water and stir.</p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+     <h3>Guilt-Free Snack Mix</h3>
+     <img src="images/3781500.jpg" width="560"  height="315" alt=""/>
+     <p>Ingredients<br>4 cups crispy corn cereal squares<br>1 cup dried mixed fruit, chopped<br>½ cup yogurt covered raisins<br>½ cup banana chips<br>⅓ cup chopped mixed nuts<br><br>1.mix together crispy corn cereal squares, dried fruit mix, yogurt covered raisins<br>2. mixed nuts and banana chips. Store in sealed, airtight containers.</p>
+     </div>
+     <div class="h1" style="position: relative; width: 100%; text-align: center;">
+	<button id="scrolltotop" style="font-family: amatic-sc;font-style: normal; font-weight: 700; border: thick solid #937E64; background-color: #937E64; color: #FFFFFF; font-size: xx-large; border-radius: 10px;">Click me to the top<a class="page-scroll" href="#title"></a>
+	</button>
+    <a href="index.html"><img class="btn-link" src="images/home-512.png" alt="" width="512" height="512" ></a>
+    </div>
+    </div>
+  </div>
+		<!-----------------content-box-4
+		<section class="content-box box-4">
+			<div class="zerogrid">
+				<div class="row wrap-box">
+
+				</div>
+			</div>
+	
+    	</section>-------------------->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+  	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    
+<script>
+$(function(){
+		 $("#imageBox").imagesLoaded(function(){
+			 	$("#imageBox").masonry();
+		});
+	});
+$(function(){
+    $("#scrolltotop").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:0
+        },500);
+    });
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300){
+            $('#gotop').fadeIn("fast");
+        } else {
+            $('#gotop').stop().fadeOut("fast");
+        }
+    });
+});
+</script> 
+</body>
+
+</html>

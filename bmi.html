@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Get fit get lit</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+	================================================== -->
+  	<link rel="stylesheet" href="css/bodyfat.css">
+	<link rel="stylesheet" href="css/bodyfat style.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	
+	<!-- Custom Fonts -->
+    <link href="font/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	
+	<link rel="stylesheet" href="css/bmimenu.css">
+	<script src="js/jquery1111.min.js" type="text/javascript"></script>
+	<script src="js/script.js"></script>
+	
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/Items/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+<script>
+	$(document).ready(function() {
+    	$("#contact").click(function(){
+			$("html,body").animate({scrollTop:$("#contact_form").offset().top} , 800); }); 
+    });
+</script>
+</head>
+
+<body>
+<div class="wrap-body">
+
+<!--////////////////////////////////////Header-->
+
+<!-----------------menu-------------------->
+	<header>
+		<div id="cssmenu" class="align-center">
+			<ul>
+			   <li class="active"><a href="index.html"><span>Home</span></a></li>
+			   
+               <li class="has-sub"><a href="#"><span>Menu</span></a>
+				  <ul >
+					 <li class="has-sub"><a href="#"><span>Calculator</span></a>
+						<ul>
+						   <li><a href="bmr.html"><span>BMR Calculator</span></a></li>
+						   <li class="last"><a href="bmi.html"><span>Body Fat Rate</span></a></li>
+						</ul>
+					 </li>
+					 <li class="has-sub"><a href="#"><span>Get Fit By</span></a>
+						<ul>
+						   <li><a href="food.html"><span>Food</span></a></li>
+						   <li class="last"><a href="train.html"><span>Train</span></a></li>
+						</ul>
+					 </li>
+				  </ul>
+			   </li>
+               
+               <li class="has-sub"><a href="#"><span>Account</span></a>
+               <ul>
+               <li><a href="account setting.html"><span>Account Setting</span></a></li>
+               <li class="last"><a href="#"><span>My Favorite</span></a></li>
+               </ul>
+               </li>
+			   
+			   <li><a href="News.html"><span>Hot News</span></a>
+               </li>
+			   <li class="last" id="contact"><a href="index.html#contact_form"><span>Contact</span></a></li>
+			</ul>
+      </div> 
+	</header>
+<!--////////////////////////////////////Container-->
+<section id="container">
+	<div class="wrap-container">
+		<!-----------------content-box-1-------------------->
+		<section class="content-box box-1">
+			<div class="zerogrid">
+				<div class="wrap-box">
+				   <div class="row" id="row1">
+                   	  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<div class="wrap-col">
+                        <div class="item-container" style="width: 100%; margin-top: 23px;">
+					  	</div>
+                        <div class="item-container" id="login">
+                        <div class="row wrap-box">
+						      <div class="subcribe-form">
+						        <h1>Body Fat Calculator</h1>
+                                <div class="col-mid-4">
+                                   <label id="cmkg">                                
+								   <div style="text-align:center;">Tall<input name="tall" type="text" id="tall" size="10" value="160">cm</div>
+								   <div style="text-align:center;">Weight<input name="weight" type="text" id="weight" size="10" value="45">kg</div>
+                 </label>
+								<label style="text-align:center;">
+<button type="button" class="btn btn-default" value="Calculate body fat" onclick="BodyFat();" >Calculate</button></label>
+								</div>
+                                <div id="outputDiv">
+								<p id="lblResult">My BMI</p>
+                                <p id="comment">How fat I am ?</p>
+                                </div>
+					            
+                                
+					          </div>
+		          			  </div>
+                        </div>
+   					  	</div>
+					  </div>
+                   </div>
+                </div>
+			</div>
+		</section>
+		<!-----------------content-box-4
+		<section class="content-box box-4">
+			<div class="zerogrid">
+				<div class="row wrap-box">
+
+				</div>
+			</div>
+		</section>-------------------->
+	</div>
+</section>
+</div>
+
+<script type="javascript"></script>
+<script>
+function BodyFat(){
+	var t = $("#tall").val();
+	var w = $("#weight").val();
+	var bmi;
+	if(isNaN(t)){
+		alert("Only numbers!");
+	//清空字串
+		tall.value=""; 
+	}
+	else if(isNaN(w)){
+		alert("Only numbers!");
+	//清空字串
+		weight.value="";
+	}
+	else{ 
+		t = parseFloat(t) / 100;
+		w = parseFloat(w)
+		bmi = w / (t*t);
+	//取小數點後 2 位數
+		bmi = bmi.toFixed(2);
+		document.getElementById("lblResult").innerText = "BMI= "+bmi;
+	//document.getElementById('c').innerHTML = "BMI= ";
+	}
+
+
+	var b;
+
+		if (bmi < 18.5) {
+            b = "Underweight";
+        } else if ((bmi) >= 18.5 && (bmi) <= 24.9) {
+            b = "Normal";
+        } else if (bmi >= 25 && bmi <= 29.9) {
+            b = "Overweight";
+        } else {
+            b = "Obese";
+        }
+
+		document.getElementById("comment").innerText = b;
+}
+
+
+</script>
+</body>
+
+</html>

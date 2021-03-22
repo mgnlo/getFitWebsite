@@ -1,0 +1,234 @@
+/* -------------------------------------------- */
+/* ------------------Grid System--------------- */ 
+.zerogrid{
+	width: 1200px;
+	position: relative;
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	padding: 0px;
+	left: auto;
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+.zerogrid:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.zerogrid .f-left{float: left!important;}
+.zerogrid .f-left{float: left!important;}
+
+.zerogrid .row{}
+.zerogrid .row:before,.row:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.zerogrid .row:after{clear: both; }
+.zerogrid .row{zoom: 1;}
+
+.zerogrid .wrap-col{margin: 10px; color: #937E64;}
+
+.zerogrid .col-1-2, .zerogrid .col-1-3, .zerogrid .col-2-3, .zerogrid .col-1-4, .zerogrid .col-2-4, .zerogrid .col-3-4, .zerogrid .col-1-5, .zerogrid .col-2-5, .zerogrid .col-3-5, .zerogrid .col-4-5, .zerogrid .col-1-6, .zerogrid .col-2-6, .zerogrid .col-3-6, .zerogrid .col-4-6, .zerogrid .col-5-6{float: left; display: inline-block;}
+
+.zerogrid .col-3-5{
+	float: right;
+	display: inline-block;
+	padding-left: 0px;
+}
+
+.zerogrid .col-full{width:100%;}
+.zerogrid .offset-1-2{margin-left: 50%;}
+
+.zerogrid .col-1-3,.zerogrid .col-1-3-fixed{
+	width: 43.33%;
+}
+.zerogrid .col-2-3,.zerogrid .col-2-3-fixed{
+	width: 55%;
+	margin-top: 4px;
+	margin-left: 4px;
+}
+.zerogrid .offset-1-3{margin-left: 33.33%;}
+.zerogrid .offset-2-3{margin-left: 66.66%;}
+
+.zerogrid .col-1-4,.zerogrid .col-1-4-fixed{width:25%;}
+.zerogrid .col-2-4,.zerogrid .col-2-4-fixed{width:50%;}
+.zerogrid .col-3-4,.zerogrid .col-3-4-fixed{width:75%;}
+.zerogrid .offset-1-4{margin-left: 25%;}
+.zerogrid .offset-2-4{margin-left: 50%;}
+.zerogrid .offset-3-4{margin-left: 75%;}
+
+.zerogrid .col-1-5,.zerogrid .col-1-5-fixed{width:20%;}
+
+@media only screen and (min-width : 904px ) and (max-width : 1483px ){
+.zerogrid .logo{display:none;}
+}
+
+@media only screen and (min-width : 701px ) and (max-width : 903px ){
+.zerogrid .logo{display:none;}
+#link{
+	float: none;
+	margin-top: 218px;
+	margin-left: 133px;
+	}
+.zerogrid{
+	width: 100%
+}
+}
+
+@media only screen and (max-width : 701px ){
+.zerogrid .col-2-5,.zerogrid .col-2-5-fixed{
+	display:none;}
+}
+.zerogrid .col-2-5,.zerogrid .col-2-5-fixed{
+	width: 30%;
+	text-align: center;
+	margin-top: -8px;
+}
+.zerogrid .col-3-5,.zerogrid .col-3-5-fixed{
+	width: 70%;
+
+}
+.zerogrid .col-4-5,.zerogrid .col-4-5-fixed{
+	width: 73%;
+}
+#login{
+	width: 100%;
+}
+.content-box.wrap-box.row.warp-box{
+	width: 100%;
+}
+.zerogrid .offset-3-5{margin-left: 60%;}
+.zerogrid .offset-4-5{margin-left: 80%;}
+
+.zerogrid .col-1-6,.zerogrid .col-1-6-fixed{width:16.66%;}
+.zerogrid .col-2-6,.zerogrid .col-2-6-fixed{width:33.33%;}
+.zerogrid .col-3-6,.zerogrid .col-3-6-fixed{width:50%;}
+.zerogrid .col-4-6,.zerogrid .col-4-6-fixed{width:66.66%;}
+.zerogrid .col-5-6,.zerogrid .col-5-6-fixed{width:83.33%;}
+.zerogrid .offset-1-6{margin-left: 16.66%;}
+.zerogrid .offset-2-6{margin-left: 33.33%;}
+.zerogrid .offset-3-6{margin-left: 50%;}
+.zerogrid .offset-4-6{margin-left: 66.66%;}
+.zerogrid .offset-5-6{margin-left: 83.33%;}
+@media only screen and (min-width : 904px ) and (max-width : 1483px ){
+.zerogrid{width:900px;}
+#top{width: 100%;}
+#News {
+	text-align: left;
+	padding-bottom: 48%;
+	padding-left: 7%;
+	color: #BAAC9A;
+}
+#Food {
+	text-align: right;
+	padding-bottom: 32%;
+	padding-right: 2%;
+	width: 100%;
+	color: #BAAC9A;
+}
+#Train{
+	text-align: left;
+	color: #BAAC9A;
+	padding-bottom: 0%;
+	width: 100%;
+	padding-top: 40%;
+	padding-left: 3%;
+}
+}
+
+@media only screen and (min-width : 701px ) and (max-width : 903px ){
+	.zerogrid .col-3-5,.zerogrid .col-3-5-fixed{
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	width: 67%;
+}
+#top{width: 100%;}
+.zerogrid{width: 100%;}
+#News {
+	text-align: left;
+	padding-bottom: 48%;
+	padding-left: 5%;
+	color: #BAAC9A;
+}
+#Food {
+	text-align: right;
+	padding-bottom: 29%;
+	width: 100%;
+	color: #BAAC9A;
+}
+#Train{
+	color: #BAAC9A;
+	padding-top: 45%;
+	padding-left: 2%;
+	width: 100%;
+}
+}
+
+@media only screen and (max-width : 768px ){
+	.zerogrid, .zerogrid .col-1-2, .zerogrid .col-1-3, .zerogrid .col-2-3, .zerogrid .col-1-4, .zerogrid .col-2-4, .zerogrid .col-3-4, .zerogrid .col-1-5, .zerogrid .col-2-5, .zerogrid .col-3-5, .zerogrid .col-4-5, .zerogrid .col-1-6, .zerogrid .col-2-6, .zerogrid .col-3-6, .zerogrid .col-4-6, .zerogrid .col-5-6{
+	width: 100%;
+	display: block;
+}
+	.zerogrid .offset-1-2, .zerogrid .offset-1-3, .zerogrid .offset-2-3, .zerogrid .offset-1-4, .zerogrid .offset-2-4, .zerogrid .offset-3-4, .zerogrid .offset-1-5, .zerogrid .offset-2-5, .zerogrid .offset-3-5, .zerogrid .offset-4-5, .zerogrid .offset-1-6, .zerogrid .offset-2-6, .zerogrid .offset-3-6, .zerogrid .offset-4-6, .zerogrid .offset-5-6{margin-left:0;}
+#News {
+	text-align: left;
+	padding-bottom: 48%;
+	padding-left: 5%;
+	color: #BAAC9A;
+}
+#Food {
+	text-align: right;
+	padding-bottom: 31%;
+	padding-right: 2%;
+	width: 100%;
+	color: #BAAC9A;
+}
+#Train{
+	text-align: left;
+	color: #BAAC9A;
+	padding-bottom: 0%;
+	width: 100%;
+	padding-top: 47%;
+	padding-left: 7%;
+}
+#logo{display:none;}
+#login{display:none;}
+}
+#bl2 {
+	width: 62%;
+	padding-left: 0px;}
+#password {color: #937E64;}
+#username {color: #937E64;}
+#connect {color: #937E64;}
+#email {color: #937E64;}
+#top {
+}
+#logo {
+}
+#search{
+	background-color: #BAAC9A;
+	border: 8px solid #BAAC9A;
+	text-shadow: 0px 0 #BAAC9A;
+	color: #FFFFFF;
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: 500;
+	-webkit-box-shadow: 0px 1px 0px 0px #85725B;
+	box-shadow: 0px 1px 0px 0px #85725B;
+}
+@media  only screen and (min-width : 701px ) and (max-width : 768px ){
+.zerogrid .logo{display: block;}
+#link{
+	width: 33%;
+	margin-left: 64%;
+}
+}
+@media  only screen and (min-width : 769px ) and (max-width : 847px ){
+.zerogrid .col-2-5,.zerogrid .col-2-5-fixed{
+	width: 31%;
+	margin-top: -73px;
+}
+.zerogrid .col-2-5,.zerogrid .col-2-5-fixed
+}

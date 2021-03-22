@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<!-- CSS -->
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+   	<style type="text/css">
+	body{
+		background-color:#D5CBA8;
+		}
+	#imageBox {
+	margin-right: auto;
+	margin-left: auto;
+	max-height: 3509px;
+	}		
+	#imageBox .imgBox {
+	width: 33%;
+	text-align: center;
+	border: medium solid #937E64;
+	background-color: #D5CBA8;
+	}
+    #imageBox .imgBox img {
+	width: 100%;
+	margin: 2px;
+	padding: 5px;
+	height: auto;
+	}
+    h3 {
+	font-family: amatic-sc;
+	width: 100%;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 200%;
+}
+    p {
+	font-family: averia-serif-libre;
+	width: 100%;
+	font-style: normal;
+	font-weight: 300;
+	font-variant: small-caps;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+	@media screen and (min-width:992px){#imageBox .imgBox{width:25%;}}
+	@media screen and (min-width:768px) and (max-width:991px){#imageBox .imgBox{width:33%;}}
+	@media screen and (min-width:480px) and (max-width:767px){#imageBox .imgBox{width:50%;}}
+	@media screen and (max-width:479px){#imageBox .imgBox{width:100%;}}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+  <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+    <script>var __adobewebfontsappname__="dreamweaver"</script>
+  	<script src="http://use.edgefonts.net/amatic-sc:n4,n7:default;averia-serif-libre:n3,n4:default.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/food style.css">
+	
+	<!-- Custom Fonts -->
+    <link href="font/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/food0menu.css">
+	<script src="js/jquery1111.min.js" type="text/javascript"></script>
+	<script src="js/script.js"></script>
+	
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/Items/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+<script>
+	$(document).ready(function() {
+    	$("#contact").click(function(){
+			$("html,body").animate({scrollTop:$("#contact_form").offset().top} , 800); }); 
+    });
+</script>
+</head>
+
+<body>
+
+<!--////////////////////////////////////Header-->
+
+<!-----------------menu-------------------->
+	<header>
+		<div id="cssmenu" class="align-center">
+			<ul>
+			   <li class="active"><a href="index.html"><span>Home</span></a></li>
+			   
+               <li class="has-sub"><a href="#"><span>Menu</span></a>
+				  <ul >
+					 <li class="has-sub"><a href="#"><span>Calculator</span></a>
+						<ul>
+						   <li><a href="bmr.html"><span>BMR Calculator</span></a></li>
+						   <li class="last"><a href="bmi.html"><span>Body Fat Rate</span></a></li>
+						</ul>
+					 </li>
+					 <li class="has-sub"><a href="#"><span>Get Fit By</span></a>
+						<ul>
+						   <li><a href="food.html"><span>Food</span></a></li>
+						   <li class="last"><a href="train.html"><span>Train</span></a></li>
+						</ul>
+					 </li>
+				  </ul>
+			   </li>
+               
+               <li class="has-sub"><a href="#"><span>Account</span></a>
+               <ul>
+               <li><a href="account setting.html"><span>Account Setting</span></a></li>
+               <li class="last"><a href="#"><span>My Favorite</span></a></li>
+               </ul>
+               </li>
+			   
+			   <li><a href="News.html"><span>Hot News</span></a>
+               </li>
+			   <li class="last" id="contact"><a href="index.html#contact_form"><span>Contact</span></a></li>
+			</ul>
+      </div> 
+	</header>
+<!--////////////////////////////////////Container-->
+
+		<!-----------------content-box-1-------------------->
+	<div class="container">
+    <div class="logo" id="title">News</div>
+    <div id="imageBox" class="row">
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>Why Do (or Don't)<br>We Eat Healthy Food</h3>
+      <img src="images/healthy-choices.jpeg" width="600" height="457" alt=""/>
+	  <p>According to research 61% of Americans make the commitment to eat healthy. Of course, there's a lot of variation in that claim. From "Our Appetite for Healthy Eating": Organic shoppers, for instance, are 31% more likely to say they're committed to healthy eating. On the other hand, those who believe their cooking skills to be sub-par are 13% less likely to say they're committed to healthy eating.<br>Cost is also big factor when it comes to deciding what to purchase at the grocery store. We know which foods are healthier, but often we go for the cheaper option instead. Research shows 60% of consumers say cost has prevented them from eating more healthfully, and that's just the average shopper. The figure gets worse for younger consumers and those with lower incomes. </p>
+     </div>
+     <div class="imgBox  col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>13 Tips on Waking up early<br>for night owls</h3>
+      <img src="images/1.jpg" width="740" height="494" alt=""/>
+	  <p>1. Know WHY you are waking up<br>2. Shift your sleeping schedule in increments.<br>3. Create an environment of sleep.<br>4. No Napping Past 7<br>5. A Week of Camping<br>6. Read Fiction Before Sleep<br>7. Winding Down Routine<br>8. Heavy Lunch<br>9. Smarter lights and curtains<br>10. Trick snooze<br>11. Pet alarm clock<br>12. Defeat your brain<br>13. No more "5 more minutes"</p>
+     </div>
+     <div class="imgBox  col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>build muscle or lose fat which first</h3>
+      <img src="images/280H.jpg" width="5760"  height="3840" alt=""/>
+      <p>Try making a schedule with different workouts planned for specific days of the week. This way it's easy to keep track of what muscle groups you're working, how much cardio you're doing, and how often you switch up your workouts.<br>Everyone's body is different and it takes some experimenting to figure out what you should eat before a workout - there's no single formula. But Matheny's recommendation is having a balanced meal around three hours before a long workout and maybe even a small snack 30 minutes before.<br></p>
+     </div>
+     <div class="imgBox  col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>Body fat percentage</h3>
+      <img src="images/1378376098-1662359752_n.jpg" width="600"  height="444" alt=""/>
+      <p>Putting on muscle doesn't always translate to performing better sports. In some sports where pure strength is the most important aspect, putting on muscle will generally improve performance.<br>The problem is that extra muscle also increases body weight, which may not be beneficial since the BJJ athlete will need to move more weight during a roll.<br>To avoid gaining excess body fat, the ideal weight/muscle gain can occur at a rate of one pound ( 0,45 kgs) every two weeks for males and ~½LB for females.<br> </p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <h3>The best time to eat</h3>
+      <img src="images/time-restricted_620x350_51490949065.jpg" width="620"  height="350" alt=""/>
+      <p>With ever changing schedules and unpredictable obligations, knowing WHEN to eat can be really challenging!  Well worry no more because I have created this quick cheat sheet on the best times to eat meals & snacks in your day.<br>To use this resource, simply aim to enjoy your morning meal approximately within 1 hour of waking and follow the recommended meal and snack times listed.  So for example, if you're an early riser and get up at 5 am, you want to aim enjoy breakfast between 6 - 7 am, a mid-morning snack between 9 - 10 am, a mid-day meal between 12 - 1 pm, an afternoon snack between 3 - 4 pm, and an evening meal between 6 - 7 pm.<br></p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+     <h3>How to choose food</h3>
+     <img src="images/下載.jpg" width="304"  height="166" alt=""/>
+     <p>The breads are low in extra fat .also,there are large in food fiber and complex , which helps you feel full more time and also stop you from eating too much. Pick up breads which initial component proclaiming to always be" essential" after the feed; eg"wholewheat" or perhaps even "whole white flour" </p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+     <h3>5 way to get<br>fit and healthy<br>at the office</h3>
+     <img src="images/GetFitatTheOffice_0.jpg" width="582"  height="424" alt=""/>
+     <p>1. In-Office Yoga and Zumba<br>Try bringing in a yoga or Zumba instructor once a week to engage employees.<br>2. Nap Rooms<br>Sleeping on the job is no longer is a bad thing.<br>3. Wearable Wellness<br>Studies are starting to prove that the accountability that comes with wearables and tying technology. <br>4. Organic CSAs<br> Plus it supports a local business and extends wellness benefits to employees' families.<br>5. Solution-Based Stress Management</p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+     <h3>Get in shape</h3>
+     <img src="images/reasons-to-get-in-shape-1.jpg" width="515"  height="231" alt=""/>
+     <p>An increase in flexibility can decreases stiffness in joints, and can decrease pain and inflammation associated with arthritis.<br>From getting out of a chair, to lifting an object off the ground, our bodies are able to perform daily activities better.<br>Not only does getting in shape help increase insulin sensitivity (ability of muscles to uptake glucose), but helps prevent type 2 diabetes.<br>Exercise increases circulation, which helps prevent erectile dysfunction and impotence. </p>
+     </div>
+     <div class="imgBox col-xs-12 col-sm-6 col-md-4 col-lg-3">
+     <h3>Swim to get fit</h3>
+     <img src="images/96709750-dive-swim-pool-600x450.jpg" width="740"  height="555" alt=""/>
+     <p>Expect to burn around 367 cal after just 30 mins of breaststroke - that beats walking, cycling and even running<br>The resistance of water can be 44 times greater than air, meaning you have to work harder to move through it. It's like working out with weights or machines without the need for expensive equipment. </p>
+     </div>
+     <div class="h1" style="position: relative; width: 100%; text-align: center;">
+	<button id="scrolltotop" style="font-family: amatic-sc;font-style: normal; font-weight: 700; border: thick solid #937E64; background-color: #937E64; color: #FFFFFF; font-size: xx-large; border-radius: 10px;">Click me to the top<a class="page-scroll" href="#title"></a>
+	</button>
+    <a href="index.html"><img class="btn-link" src="images/home-512.png" alt="" width="512" height="512" ></a>
+    </div>
+    </div>
+  </div>
+		<!-----------------content-box-4
+		<section class="content-box box-4">
+			<div class="zerogrid">
+				<div class="row wrap-box">
+
+				</div>
+			</div>
+	
+    	</section>-------------------->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+  	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    
+<script>
+$(function(){
+		 $("#imageBox").imagesLoaded(function(){
+			 	$("#imageBox").masonry();
+		});
+	});
+$(function(){
+    $("#scrolltotop").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:0
+        },500);
+    });
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300){
+            $('#gotop').fadeIn("fast");
+        } else {
+            $('#gotop').stop().fadeOut("fast");
+        }
+    });
+});
+</script> 
+</body>
+
+</html>
