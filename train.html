@@ -161,13 +161,7 @@
     <img src="images/kettlebells.jpg" width="600px" height="377.5px" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 2;  height: 377.5px;" alt="">
     </div>
     </div>
-     <div class="h1" style="position: relative; width: 100%; float: right;">
-		<button id="scrolltotop" style="font-family: amatic-sc;font-style: normal; font-weight: 700; border: thick solid #937E64; background-color: #937E64; color: #FFFFFF; font-size: xx-large; border-radius: 10px;">Click me to the top
-  <a class="page-scroll" href="#title"></a>
-</button><br><br>
-<a href="index.html"><img class="btn-link" src="images/home-512.png" alt="" width="512" height="512" ></a>	
 	</div>
-    </div>
 <!-----------------content-box-4
 		<section class="content-box box-4">
 			<div class="zerogrid">
@@ -191,32 +185,18 @@
     
 <script>
 $(function(){
-		 $("#imageBox").imagesLoaded(function(){
-			 	$("#imageBox").masonry();
-		});
+	$("#imageBox").imagesLoaded(function(){
+		$("#imageBox").masonry();
 	});
-$(function(){
-    $("#scrolltotop").click(function(){
-        jQuery("html,body").animate({
-            scrollTop:0
-        },500);
-    });
-    $(window).scroll(function() {
-        if ( $(this).scrollTop() > 300){
-            $('#gotop').fadeIn("fast");
-        } else {
-            $('#gotop').stop().fadeOut("fast");
-        }
-    });
 });
 $(function(){
-			$(".pic").cycle({ 
-    				fx:     "scrollRight", 
-    				next:   ".pic", 
-    				timeout:  0, 
-    				easing:  "easeInOutBack" 
-			});
-		});
+	$(".pic").cycle({ 
+		fx:     "scrollRight", 
+		next:   ".pic", 
+		timeout:  0, 
+		easing:  "easeInOutBack" 
+	});
+});
 </script>
 </body>
 
